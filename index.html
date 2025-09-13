@@ -603,14 +603,19 @@
           </p>
 
           <!-- Input and Button -->
-          <div class="flex flex-col sm:flex-row items-center gap-4">
+          <div
+            class="flex flex-col sm:flex-row items-center gap-4 w-full max-w-xl mx-auto mt-6"
+          >
+            <!-- Input Field -->
             <input
               type="email"
               placeholder="Your E-mail here..."
-              class="flex-1 w-full rounded-full px-5 py-3 shadow-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              class="flex-1 w-full rounded-full px-5 py-3 text-gray-700 placeholder-gray-400 shadow-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 transition"
             />
+
+            <!-- Subscribe Button -->
             <button
-              class="bg-orange-500 text-white px-8 py-3 rounded-md shadow-lg hover:bg-orange-600 transition"
+              class="bg-orange-500 text-white font-semibold px-6 sm:px-8 py-3 rounded-full shadow-lg hover:bg-orange-600 active:scale-95 transition transform"
             >
               Subscribe Our Newsletter
             </button>
@@ -620,39 +625,41 @@
     </section>
 
     <!-- Footer -->
-<footer class="border-t py-6">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 gap-6">
-    
-    <!-- Left: Logo + Copyright -->
-    <div class="flex flex-col items-center md:items-start space-y-3">
-      <img
-        src="images/landeng-logo.png"
-        alt="logo"
-        class="h-8 w-auto object-contain"
-      />
-      <p class="text-gray-600 text-sm text-center md:text-left">
-        © 2020 Epixelab. All rights reserved.
-      </p>
-    </div>
+    <footer class="border-t py-6">
+      <div
+        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 gap-6"
+      >
+        <!-- Left: Logo + Copyright -->
+        <div class="flex justify-center items-center md:items-start space-y-3">
+          <img
+            src="images/landeng-logo.png"
+            alt="logo"
+            class="h-8 w-auto object-contain"
+          />
+         
+        </div>
 
-    <!-- Middle: Navigation Links -->
-    <div class="flex justify-center">
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex flex-wrap gap-6 text-sm text-[#1E0E62]">
-        <a href="#" class="hover:text-accent transition">Portfolio</a>
-        <a href="#" class="hover:text-accent transition">How it Works</a>
-        <a href="#" class="hover:text-accent transition">Pricing</a>
-        <a href="#" class="hover:text-accent transition">About</a>
-        <a href="#" class="hover:text-accent transition">Login</a>
+         <p class="text-gray-600 ml-[20px] text-sm text-center md:text-left">
+            © 2020 Epixelab. All rights reserved.
+          </p>
+
+        <!-- Middle: Navigation Links -->
+        <div class="flex justify-center">
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex flex-wrap gap-6 text-sm text-[#1E0E62]">
+            <a href="#" class="hover:text-accent transition">Portfolio</a>
+            <a href="#" class="hover:text-accent transition">How it Works</a>
+            <a href="#" class="hover:text-accent transition">Pricing</a>
+            <a href="#" class="hover:text-accent transition">About</a>
+            <a href="#" class="hover:text-accent transition">Login</a>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div class="md:hidden text-sm text-[#1E0E62]">
+            <a href="#" class="hover:text-accent transition">Login</a>
+          </div>
+        </div>
       </div>
-
-      <!-- Mobile Menu -->
-      <div class="md:hidden text-sm text-[#1E0E62]">
-        <a href="#" class="hover:text-accent transition">Login</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
+    </footer>
   </body>
 </html>
