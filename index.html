@@ -621,37 +621,34 @@
 
     <!-- Footer -->
     <footer class="border-t py-6">
-      <div
-        class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 gap-6"
-      >
+      <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
         <!-- Left: Logo + Copyright -->
-        <div class="flex flex-col items-center md:items-start space-y-3">
+        <div class="flex items-center space-x-3">
           <img
             src="images/landeng-logo.png"
             alt="logo"
-            class="h-8 w-auto object-contain"
+            class="h-6 w-20 md:h-6 md:w-40 object-contain"
           />
-         
-        </div>
-         <p class="text-gray-600 text-sm text-center md:text-left">
+          <p class="text-gray-600 text-[12px] md:text-sm">
             © 2020 Epixelab. All rights reserved.
           </p>
+        </div>
 
-        <!-- Middle: Navigation Links -->
-        <div class="flex justify-center">
+        <!-- Right: Navigation Links -->
+        <div class="flex items-center space-x-6 text-sm text-[#1E0E62]">
           <!-- Desktop Menu -->
-          <div class="hidden md:flex flex-wrap gap-6 text-sm text-[#1E0E62]">
+          <div class="hidden md:flex space-x-6">
             <a href="#" class="hover:text-accent transition">Portfolio</a>
             <a href="#" class="hover:text-accent transition">How it Works</a>
             <a href="#" class="hover:text-accent transition">Pricing</a>
             <a href="#" class="hover:text-accent transition">About</a>
-            <a href="#" class="hover:text-accent transition">Login</a>
           </div>
-
-          <!-- Mobile Menu -->
-          <div class="md:hidden text-sm text-[#1E0E62]">
-            <a href="#" class="hover:text-accent transition">Login</a>
-          </div>
+          <!-- Login (Always visible) -->
+          <button
+            class="px-3 py-1.5 text-sm hover:bg-gray-100 hover:text-accent transition rounded-md"
+          >
+            Log in
+          </button>
         </div>
       </div>
     </footer>
